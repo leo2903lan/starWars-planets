@@ -1,6 +1,16 @@
 
 # Boas vindas ao repositório do projeto Starwars Planets Search em context api e hooks!
 
+Visualize o projeto no ar em:
+
+https://leo2903lan.github.io/starWars-planets/
+
+Para rodar localmente o projeto, instale as dependencias com 
+$ npm  install
+
+logo depois inicie com
+$ npm start
+
 ---
 
 # Habilidades
