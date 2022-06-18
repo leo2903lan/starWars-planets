@@ -61,8 +61,9 @@ export default function NumberSearch() {
   };
 
   return (
-    <form>
+    <form className="form">
       <select
+        className="form-control"
         data-testid="column-filter"
         name="column_filter"
         id="column-filter"
@@ -75,6 +76,7 @@ export default function NumberSearch() {
 
       </select>
       <select
+        className="form-control"
         data-testid="comparison-filter"
         name="comparison"
         id="comparison"
@@ -86,15 +88,16 @@ export default function NumberSearch() {
         <option value="igual a">igual a</option>
       </select>
       <input
+        className="form-control"
         data-testid="value-filter"
         type="number"
         name="numberCoparar"
         id="numberCoparar"
-        placeholder="digite só números"
         value={ valueFilter }
         onChange={ handleChangeValueFilter }
       />
       <button
+        className="btn btn-warning"
         data-testid="button-filter"
         type="button"
         onClick={ sendFilters }

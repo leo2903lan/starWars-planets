@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import MyContext from '../context/MyContext';
+import '../style/table.css';
 
 export default function Table() {
   const { data, filterByName, dataFilter, filterOn } = useContext(MyContext);
@@ -21,8 +22,8 @@ export default function Table() {
   };
 
   const table = (
-    <table>
-      <thead>
+    <table className="table table-hover border-box">
+      <thead className="thead-dark">
         <tr>
           <th>name</th>
           <th>climate</th>
@@ -41,7 +42,7 @@ export default function Table() {
       </thead>
       <tbody>
         {renderFilter().map((planets) => (
-          <tr key={ planets.name }>
+          <tr key={ planets.name } className="table-warning">
             <td>{planets.name}</td>
             <td>{planets.climate}</td>
             <td>{planets.population}</td>

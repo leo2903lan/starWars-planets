@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react';
 import MyContext from '../context/MyContext';
+import NumberSearch from './NumberSearch';
+import '../style/search.css';
 
 export default function Search() {
   const [planet, setPlanet] = useState('');
@@ -18,11 +20,15 @@ export default function Search() {
   };
 
   return (
-    <input
-      data-testid="name-filter"
-      value={ planet }
-      onChange={ handleChangePlanet }
-      placeholder="pesquise um Planeta"
-    />
+    <section className="search-box">
+      <input
+        className="form-control-lg"
+        data-testid="name-filter"
+        value={ planet }
+        onChange={ handleChangePlanet }
+        placeholder="pesquise um Planeta"
+      />
+      <NumberSearch />
+    </section>
   );
 }
