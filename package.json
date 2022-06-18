@@ -16,7 +16,7 @@
       "!src/index.js"
     ]
   },
-  "homepage": "https://username.github.io/app-toot-name",
+  "homepage": "https://leo2903lan.github.io/starWars-planets/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
